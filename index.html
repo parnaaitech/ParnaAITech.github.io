@@ -105,13 +105,10 @@
             align-items: center;
         }
 
-        .about-text {
-            line-height: 1.8;
-        }
-
         .about-text p {
             margin-bottom: 1.5rem;
             color: #555;
+            line-height: 1.8;
         }
 
         .stats {
@@ -255,23 +252,6 @@
             margin: 2rem auto;
         }
 
-        .contact-info p {
-            font-size: 1.2rem;
-            color: #555;
-            margin: 1.5rem 0;
-        }
-
-        .email-link {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.3rem;
-        }
-
-        .email-link:hover {
-            text-decoration: underline;
-        }
-
         footer {
             background: #1e3c72;
             color: white;
@@ -280,189 +260,151 @@
         }
 
         @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-
-            .nav-links {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            h2 {
-                font-size: 2rem;
-            }
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1.1rem; }
+            .about-content { grid-template-columns: 1fr; }
+            h2 { font-size: 2rem; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Parna AI Tech Innovations LLP</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#sdgs">SDG Impact</a></li>
-                <li><a href="#technology">Technology</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <h1>Intelligent Cities for a Sustainable Future</h1>
-        <p>Applied Machine Learning for resilient urban systems and climate change challenges</p>
-    </section>
+<header>
+    <nav>
+        <div class="logo">Parna AI Tech Innovations LLP</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#sdgs">SDG Impact</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section id="about">
-        <div class="about-content">
-            <div class="about-text">
-                <h2>Who We Are</h2>
-                <p> Parna AI Tech Innovations LLP is a DPIIT-recognised startup leveraging artificial intelligence to address pressing urban and environmental challenges.<p>
-                <p>We design applied machine-learning solutions that enable governments, cities, and institutions to make evidence-based decisions for sustainable, resilient, and livable urban systems.<p>
-                <p>Our work aligns closely with the United Nations Sustainable Development Goals, particularly SDG 11 (Sustainable Cities and Communities) and SDG 13 (Climate Action).<p>
-            <div class="stats">
-                <div class="stat-box">
-                    <h3>SDG 11</h3>
-                    <p>Sustainable Cities & Communities</p>
-                </div>
-                <div class="stat-box">
-                    <h3>SDG 13</h3>
-                    <p>Climate Action</p>
-                </div>
-                <div class="stat-box">
-                    <h3>AI/ML</h3>
-                    <p>Core Technology</p>
-                </div>
-                <div class="stat-box">
-                    <h3>DPIIT</h3>
-                    <p>Recognised Startup</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="hero">
+    <h1>AI for Sustainable and Resilient Cities</h1>
+    <p>Transforming urban and climate data into intelligent, actionable insights for a better future</p>
+    <div class="badge">DPIIT-Recognised Climate & Urban AI Startup</div>
+</section>
 
-    <section id="solutions" class="solutions">
-        <h2>Our Solutions</h2>
-        <p style="text-align: center; color: #666; max-width: 800px; margin: 0 auto 3rem;">We develop intelligent systems that transform complex urban and climate data into actionable insights</p>
-            
-            <div class="solution-card">
-                <h3>🌡️ Climate Resilience Systems</h3>
-                <p>Machine learning models that analyze climate patterns, predict extreme weather events, and assess vulnerability. We help cities prepare for and adapt to climate change impacts with data-driven early warning systems.</p>
-            </div>
-            
-            <div class="solution-card">
-                <h3>📊 Decision Support Platforms</h3>
-                <p>Comprehensive AI-driven dashboards that synthesize multiple data sources to provide real-time insights for policymakers and urban planners. Transform complex datasets into clear, actionable recommendations.</p>
-            </div>
-            
-            <div class="solution-card">
-                <h3>🌱 Environmental Monitoring</h3>
-                <p>Advanced ML algorithms for tracking air quality, water resources, green spaces, and ecosystem health. Continuous monitoring enables proactive environmental management and policy interventions.</p>
-            </div>
-            
-            <div class="solution-card">
-                <h3>🚦 Traffic & Mobility Intelligence</h3>
-                <p>AI solutions that analyze traffic patterns, optimize public transportation routes, and reduce congestion. Support sustainable mobility through data-driven infrastructure planning and smart traffic management.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="sdgs" class="sdg-section">
-        <h2>Aligned with UN Sustainable Development Goals</h2>
-        <p style="opacity: 0.9; font-size: 1.1rem; margin-top: 1rem;">Our technology directly contributes to building a more sustainable and resilient world</p>
-        
-        <div class="sdg-container">
-            <div class="sdg-box">
-                <h3>SDG 11: Sustainable Cities and Communities</h3>
-                <ul>
-                    <li>Make cities inclusive, safe, resilient and sustainable</li>
-                    <li>Enhance sustainable urbanization and capacity</li>
-                    <li>Reduce environmental impact of cities</li>
-                    <li>Support sustainable transport systems</li>
-                </ul>
-            </div>
-            
-            <div class="sdg-box">
-                <h3>SDG 13: Climate Action</h3>
-                <ul>
-                    <li>Strengthen resilience to climate-related hazards</li>
-                    <li>Integrate climate measures into policies</li>
-                    <li>Improve education and awareness on climate change</li>
-                    <li>Build adaptive capacity for climate challenges</li>
-                    <li>Implement early warning systems</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="technology" class="technology">
-        <h2>Our Technology Stack</h2>
-        <p style="color: #666; margin-bottom: 3rem;">Powered by state-of-the-art machine learning and AI technologies</p>
-        
-        <div class="tech-grid">
-            <div class="tech-item">
-                <h4>Deep Learning</h4>
-                <p>Neural networks for pattern recognition and predictive modeling</p>
-            </div>
-            <div class="tech-item">
-                <h4>Computer Vision</h4>
-                <p>Image analysis for urban monitoring and infrastructure assessment</p>
-            </div>
-            <div class="tech-item">
-                <h4>Natural Language Processing</h4>
-                <p>Text analysis for policy documents and citizen feedback</p>
-            </div>
-            <div class="tech-item">
-                <h4>Time Series Forecasting</h4>
-                <p>Predictive analytics for climate and urban trends</p>
-            </div>
-            <div class="tech-item">
-                <h4>Geospatial Analytics</h4>
-                <p>Location-based intelligence for urban planning</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Get In Touch</h2>
-        <div class="contact-info">
-            <p>Interested in partnering with us or learning more about our solutions?</p>
-            <p>We'd love to hear from you.</p>
+<section id="about">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>Who We Are</h2>
             <p>
-                <strong>Email:</strong><br>
-                <a href="mailto:parnaaitechinnovatiosnllp@gmail.com" class="email-link">
-                    parnaaitechinnovationsllp@gmail.com
-                </a>
+                Parna AI Tech Innovations LLP is a DPIIT-recognised startup applying artificial intelligence to address some of the most pressing urban and environmental challenges of our time.
             </p>
-            <p style="margin-top: 2rem; font-size: 1rem; color: #888;">
-                Together, we can build smarter, more sustainable cities for future generations.
+            <p>
+                We develop applied machine learning solutions that enable governments, cities, and institutions to move from fragmented data to informed, evidence-based decision-making—supporting sustainable growth, climate resilience, and smarter public systems.
+            </p>
+            <p>
+                Our work is grounded in real-world impact, with a strong focus on scalability, policy relevance, and long-term sustainability.
             </p>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2025 Parna AI Tech Innovations LLP. All rights reserved.</p>
-        <p style="margin-top: 0.5rem; opacity: 0.8;">DPIIT-Recognised Startup | Committed to SDGs 11 & 13</p>
-    </footer>
+        <div class="stats">
+            <div class="stat-box"><h3>SDG 11</h3><p>Sustainable Cities</p></div>
+            <div class="stat-box"><h3>SDG 13</h3><p>Climate Action</p></div>
+            <div class="stat-box"><h3>AI / ML</h3><p>Core Capability</p></div>
+            <div class="stat-box"><h3>DPIIT</h3><p>Recognised Startup</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="solutions" class="solutions">
+    <h2>Our Solutions</h2>
+    <p style="text-align:center; color:#666; max-width:800px; margin:0 auto 3rem;">
+        We design AI-powered systems that convert complex urban and climate data into clear, actionable intelligence for planning, policy, and operations.
+    </p>
+
+    <div class="solution-grid">
+        <div class="solution-card">
+            <h3>🌡️ Climate Resilience Systems</h3>
+            <p>Machine learning models that analyze climate trends, assess risk, and predict extreme events to support early warning, preparedness, and adaptation planning.</p>
+        </div>
+
+        <div class="solution-card">
+            <h3>📊 Decision Support Platforms</h3>
+            <p>AI-driven dashboards integrating diverse data sources to provide reliable insights for policymakers, planners, and administrators.</p>
+        </div>
+
+        <div class="solution-card">
+            <h3>🌱 Environmental Monitoring</h3>
+            <p>Intelligent systems for tracking air quality, water resources, green cover, and ecosystem health—enabling proactive environmental governance.</p>
+        </div>
+
+        <div class="solution-card">
+            <h3>🚦 Traffic & Mobility Intelligence</h3>
+            <p>Data-driven mobility analytics to optimize transport networks, reduce congestion, and support sustainable urban mobility.</p>
+        </div>
+    </div>
+</section>
+
+<section id="sdgs" class="sdg-section">
+    <h2>Aligned with UN Sustainable Development Goals</h2>
+    <p style="opacity:0.9; font-size:1.1rem; margin-top:1rem;">
+        Our solutions are purpose-built to advance global sustainability priorities and measurable development outcomes.
+    </p>
+
+    <div class="sdg-container">
+        <div class="sdg-box">
+            <h3>SDG 11: Sustainable Cities</h3>
+            <ul>
+                <li>Inclusive and resilient urban systems</li>
+                <li>Reduced environmental impact</li>
+                <li>Sustainable mobility and planning</li>
+            </ul>
+        </div>
+
+        <div class="sdg-box">
+            <h3>SDG 13: Climate Action</h3>
+            <ul>
+                <li>Climate risk and resilience planning</li>
+                <li>Early warning systems</li>
+                <li>Adaptive capacity building</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="technology" class="technology">
+    <h2>Our Technology Stack</h2>
+    <p style="color:#666;">Built on robust, production-ready AI and machine learning technologies</p>
+
+    <div class="tech-grid">
+        <div class="tech-item"><h4>Deep Learning</h4><p>Predictive and pattern-learning models</p></div>
+        <div class="tech-item"><h4>Computer Vision</h4><p>Urban and infrastructure analysis</p></div>
+        <div class="tech-item"><h4>NLP</h4><p>Policy and citizen-data analysis</p></div>
+        <div class="tech-item"><h4>Time-Series Forecasting</h4><p>Climate and urban trend prediction</p></div>
+        <div class="tech-item"><h4>Geospatial Analytics</h4><p>Location-based urban intelligence</p></div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Get In Touch</h2>
+    <div class="contact-info">
+        <p>Interested in partnering with us or exploring our solutions?</p>
+        <p><strong>Email:</strong><br>
+            <a href="mailto:parnaaitechinnovationsllp@gmail.com">
+                parnaaitechinnovationsllp@gmail.com
+            </a>
+        </p>
+        <p style="margin-top:2rem; color:#888;">
+            Together, we can design intelligent systems that shape sustainable cities and climate-resilient futures.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Parna AI Tech Innovations LLP. All rights reserved.</p>
+    <p style="opacity:0.8;">DPIIT-Recognised Startup | SDGs 11 & 13</p>
+</footer>
+
 </body>
 </html>
