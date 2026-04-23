@@ -1,408 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parna AI Tech Innovations LLP - AI for Sustainable Cities & Climate Action</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
+<title>Parna AI Tech Innovations LLP</title>
 
-        header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+<style>
+body {
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    color:#333;
+}
 
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
+/* HEADER */
+header {
+    background:#ffffff;
+    border-bottom:1px solid #eee;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
+nav {
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 2rem;
+}
 
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
+.logo {
+    font-weight:bold;
+    color:#003366;
+}
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
+.nav-links {
+    display:flex;
+    gap:2rem;
+}
 
-        .nav-links a:hover {
-            opacity: 0.8;
-        }
+.nav-links a {
+    text-decoration:none;
+    color:#333;
+}
 
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 6rem 2rem;
-            text-align: center;
-        }
+.cta {
+    background:#228B22;
+    color:white;
+    padding:8px 16px;
+    border-radius:5px;
+}
 
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            animation: fadeInDown 1s;
-        }
+/* HERO */
+.hero {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:6rem 2rem;
+    background:linear-gradient(to right,#003366,#2F7F8F);
+    color:white;
+}
 
-        .hero p {
-            font-size: 1.3rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            opacity: 0.95;
-        }
+.hero h1 {
+    font-size:2.8rem;
+}
 
-        .badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            margin-top: 1rem;
-            font-weight: 600;
-        }
+.hero p {
+    max-width:700px;
+    margin:1rem auto;
+}
 
-        section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
+.hero-buttons {
+    margin-top:2rem;
+}
 
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #1e3c72;
-        }
+.hero-buttons a {
+    margin:0 10px;
+    padding:12px 20px;
+    border-radius:5px;
+    text-decoration:none;
+}
 
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
+.primary-btn {
+    background:#228B22;
+    color:white;
+}
 
-        .about-text p {
-            margin-bottom: 1.5rem;
-            color: #555;
-            line-height: 1.8;
-        }
+.secondary-btn {
+    background:white;
+    color:#003366;
+}
 
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-        }
+/* SECTIONS */
+section {
+    max-width:1200px;
+    margin:auto;
+    padding:4rem 2rem;
+}
 
-        .stat-box {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 10px;
-            text-align: center;
-            border-left: 4px solid #667eea;
-        }
+h2 {
+    color:#003366;
+}
 
-        .stat-box h3 {
-            color: #667eea;
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
+/* CARDS */
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:2rem;
+    margin-top:2rem;
+}
 
-        .solutions {
-            background: #f8f9fa;
-        }
+.card {
+    padding:2rem;
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
 
-        .solution-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .solution-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .solution-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        }
-
-        .solution-card h3 {
-            color: #1e3c72;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .solution-card p {
-            color: #666;
-            line-height: 1.8;
-        }
-
-        .sdg-section {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            text-align: center;
-        }
-
-        .sdg-section h2 {
-            color: white;
-        }
-
-        .sdg-container {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 3rem;
-            flex-wrap: wrap;
-        }
-
-        .sdg-box {
-            background: rgba(255,255,255,0.1);
-            padding: 3rem 2rem;
-            border-radius: 15px;
-            max-width: 400px;
-            backdrop-filter: blur(10px);
-        }
-
-        .sdg-box h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .sdg-box ul {
-            list-style: none;
-            text-align: left;
-            line-height: 2;
-        }
-
-        .sdg-box li:before {
-            content: "✓ ";
-            color: #4ade80;
-            font-weight: bold;
-            margin-right: 0.5rem;
-        }
-
-        .technology {
-            text-align: center;
-        }
-
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .tech-item {
-            padding: 2rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 15px;
-            transition: transform 0.3s;
-        }
-
-        .tech-item:hover {
-            transform: scale(1.05);
-        }
-
-        .tech-item h4 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact {
-            background: #f8f9fa;
-            text-align: center;
-        }
-
-        .contact-info {
-            background: white;
-            padding: 3rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            max-width: 600px;
-            margin: 2rem auto;
-        }
-
-        footer {
-            background: #1e3c72;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            .hero p { font-size: 1.1rem; }
-            .about-content { grid-template-columns: 1fr; }
-            h2 { font-size: 2rem; }
-        }
-    </style>
+/* FOOTER */
+footer {
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:2rem;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <nav>
-        <div class="logo">Parna AI Tech Innovations LLP</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#sdgs">SDG Impact</a></li>
-            <li><a href="#technology">Technology</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<nav>
+<div class="logo">Parna AI Tech Innovations LLP</div>
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#focus">Focus</a>
+<a href="#contact">Contact</a>
+<a class="cta" href="#contact">Get in Touch</a>
+</div>
+</nav>
 </header>
 
 <section class="hero">
-    <h1>AI for Sustainable and Resilient Cities</h1>
-    <p>Transforming urban and climate data into intelligent, actionable insights for a better future</p>
-    <div class="badge">DPIIT-Recognised Startup</div>
+<div>
+<h1>AI for Climate Intelligence & Public Systems</h1>
+<p>Enabling data-driven decision-making for sustainability, governance, and climate resilience.</p>
+
+<div class="hero-buttons">
+<a href="#focus" class="primary-btn">Explore Solutions</a>
+<a href="#contact" class="secondary-btn">Collaborate With Us</a>
+</div>
+</div>
 </section>
 
 <section id="about">
-    <div class="about-content">
-        <div class="about-text">
-            <h2>Who We Are</h2>
-            <p>
-                Parna AI Tech Innovations LLP is a DPIIT-recognised startup applying artificial intelligence to address some of the most pressing urban and environmental challenges of our time.
-            </p>
-            <p>
-                We develop applied machine learning solutions that enable governments, cities, and institutions to transition from fragmented data to informed, evidence-based decision-making - supporting sustainable growth, climate resilience, and smarter public systems.
-            </p>
-            <p>
-                Our work is grounded in real-world impact, with a strong focus on scalability, policy relevance, and long-term sustainability.
-            </p>
-        </div>
-
-        <div class="stats">
-            <div class="stat-box"><h3>SDG 11</h3><p>Sustainable Cities</p></div>
-            <div class="stat-box"><h3>SDG 13</h3><p>Climate Action</p></div>
-            <div class="stat-box"><h3>AI / ML</h3><p>Core Capability</p></div>
-        </div>
-    </div>
+<h2>About Us</h2>
+<p>
+Parna AI Tech Innovations LLP develops applied machine learning systems for climate intelligence and public governance. 
+Our work focuses on building scalable, data-driven solutions that support policy, planning, and sustainable development.
+</p>
 </section>
 
-<section id="solutions" class="solutions">
-    <h2>Our Solutions</h2>
-    <p style="text-align:center; color:#666; max-width:800px; margin:0 auto 3rem;">
-        We design AI-powered systems that convert complex urban and climate data into clear, actionable intelligence for planning, policy, and operations.
-    </p>
+<section id="focus">
+<h2>Our Focus Areas</h2>
 
-    <div class="solution-grid">
-        <div class="solution-card">
-            <h3>🌡️ Climate Resilience Systems</h3>
-            <p>Machine learning models that analyze climate trends, assess risk, and predict extreme events to support early warning, preparedness, and adaptation planning.</p>
-        </div>
+<div class="grid">
+<div class="card">
+<h3>🌱 Climate Intelligence</h3>
+<p>AI-driven climate risk analysis, prediction, and resilience planning.</p>
+</div>
 
-        <div class="solution-card">
-            <h3>📊 Decision Support Platforms</h3>
-            <p>AI-driven dashboards integrating diverse data sources to provide reliable insights for policymakers, planners, and administrators.</p>
-        </div>
+<div class="card">
+<h3>🏛 Digital Governance</h3>
+<p>Data platforms enabling transparent, efficient public systems.</p>
+</div>
 
-        <div class="solution-card">
-            <h3>🌱 Environmental Monitoring</h3>
-            <p>Intelligent systems for tracking air quality, water resources, green cover, and ecosystem health—enabling proactive environmental governance.</p>
-        </div>
-
-        <div class="solution-card">
-            <h3>🚦 Traffic & Mobility Intelligence</h3>
-            <p>Data-driven mobility analytics to optimize transport networks, reduce congestion, and support sustainable urban mobility.</p>
-        </div>
-    </div>
+<div class="card">
+<h3>📊 Data Systems</h3>
+<p>Scalable infrastructure for decision intelligence and analytics.</p>
+</div>
+</div>
 </section>
 
-<section id="sdgs" class="sdg-section">
-    <h2>Aligned with UN Sustainable Development Goals</h2>
-    <p style="opacity:0.9; font-size:1.1rem; margin-top:1rem;">
-        Our solutions are purpose-built to advance global sustainability priorities and measurable development outcomes.
-    </p>
+<section>
+<h2>Why Parna AI Tech?</h2>
 
-    <div class="sdg-container">
-        <div class="sdg-box">
-            <h3>SDG 11: Sustainable Cities</h3>
-            <ul>
-                <li>Inclusive and resilient urban systems</li>
-                <li>Reduced environmental impact</li>
-                <li>Sustainable mobility and planning</li>
-            </ul>
-        </div>
-
-        <div class="sdg-box">
-            <h3>SDG 13: Climate Action</h3>
-            <ul>
-                <li>Climate risk and resilience planning</li>
-                <li>Early warning systems</li>
-                <li>Adaptive capacity building</li>
-            </ul>
-        </div>
-    </div>
+<div class="grid">
+<div class="card">Interdisciplinary expertise</div>
+<div class="card">Policy-aware AI systems</div>
+<div class="card">Climate impact focus</div>
+<div class="card">Scalable solutions</div>
+</div>
 </section>
 
-<section id="technology" class="technology">
-    <h2>Our Technology Stack</h2>
-    <p style="color:#666;">Built on robust, production-ready AI and machine learning technologies</p>
+<section id="contact">
+<h2>Contact</h2>
 
-    <div class="tech-grid">
-        <div class="tech-item"><h4>Deep Learning</h4><p>Predictive and pattern-learning models</p></div>
-        <div class="tech-item"><h4>Computer Vision</h4><p>Urban and infrastructure analysis</p></div>
-        <div class="tech-item"><h4>NLP</h4><p>Policy and citizen-data analysis</p></div>
-        <div class="tech-item"><h4>Time-Series Forecasting</h4><p>Climate and urban trend prediction</p></div>
-        <div class="tech-item"><h4>Geospatial Analytics</h4><p>Location-based urban intelligence</p></div>
-    </div>
-</section>
-
-<section id="contact" class="contact">
-    <h2>Get In Touch</h2>
-    <div class="contact-info">
-        <p>Interested in partnering with us or exploring our solutions?</p>
-        <p><strong>Email:</strong><br>
-            <a href="mailto:parnaaitechinnovationsllp@gmail.com">
-                parnaaitechinnovationsllp@gmail.com
-            </a>
-        </p>
-        <p style="margin-top:2rem; color:#888;">
-            Together, we can design intelligent systems that shape sustainable cities and climate-resilient futures.
-        </p>
-    </div>
+<p>Email: parnaaitechinnovationsllp@gmail.com</p>
+<p>Nellore, Andhra Pradesh, India</p>
 </section>
 
 <footer>
-    <p>&copy; 2025 Parna AI Tech Innovations LLP. All rights reserved.</p>
-    <p style="opacity:0.8;">DPIIT-Recognised Startup | SDGs 11 & 13</p>
+<p>© 2026 Parna AI Tech Innovations LLP</p>
+<p>AI for Climate Intelligence & Public Systems</p>
 </footer>
 
 </body>
